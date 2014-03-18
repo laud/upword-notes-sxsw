@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %} | MC API Python Example</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+    <div class="navbar" style="margin-top:20px;">
+        <div class="navbar-inner">
+            <a class="brand" href="/">MC API Python Example</a>
+            <ul class="nav">
+                <li><a href="/lists">Lists</a></li>
+                <li><a href="/reports">Reports</a></li>
+            </ul>
+        </div>
+    </div>
+
+    {% for message in messages %}
+        {% if 'success' in message.tags %}
+        <p class="text-success">{{ message }}</p>
+        {% endif %}
+        {% if 'error' in message.tags %}
+        <p class="text-error">{{ message }}</p>
+        {% endif %}
+    {% endfor %}
+
+    {% block content %}
+    {% endblock %}
+
+</div>
+</body>
+</html>

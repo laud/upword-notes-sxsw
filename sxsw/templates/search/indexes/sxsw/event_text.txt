@@ -1,0 +1,5 @@
+{{ object.title }}
+{{ object.hash_tags }}
+{{ object.theme }}
+{{ object.description }}
+{{ object.presenters_string }}

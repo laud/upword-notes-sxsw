@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+{% load staticfiles %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>UpWord Notes SXSW</title>
+<link rel="apple-touch-icon" href="{% static "images/touch-icon-iphone.png" %}">
+<link rel="apple-touch-icon" sizes="76x76" href="{% static "images/touch-icon-ipad.png" %}">
+<link rel="apple-touch-icon" sizes="120x120" href="{% static "images/touch-icon-iphone-retina.png" %}">
+<link rel="apple-touch-icon" sizes="152x152" href="{% static "images/touch-icon-ipad-retina.png" %}">
+<link rel="icon" href="{% static "favicon.ico" %}">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" type="text/css" href="{% static "css/style.css" %}"/>
+<script src="{% static "js/jq_auto_hist_pag_under.min.js" %}"></script>
+<script async src="{% static "js/search.js" %}"></script>
+</head>
+<body class="isearch">
+<div id="header" class="header section">
+    <div class="main">
+        <div class="logo">
+            <a class="right-logo" href="/"><img src="{% static "images/logo.png" %}" alt="UpWord Notes" /></a>
+        </div>
+        <div class="apps-ads">
+            <a target="_blank" href="https://itunes.apple.com/us/app/id778883247"><img src="{% static "images/app-store.png" %}" alt="" /></a>
+        </div>
+    </div>
+</div>
+<div id="wrap" class="wrap section">
+    <div class="main">
+        <div id="wrapper" class="wrapper">
+            <div class="search-form">
+                <h2>Find notes from SXSW talks.</h2>
+                <form id="search_box">
+                    <input id="s" class="search" type="text" placeholder="Search by session name, presenter, theme, etc." /><br />
+                    <input class="button" type="submit" value="Search" />
+                </form>
+                <p class="found">&nbsp;</p>
+                <div class="tweet-box">
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="sxsw.upwordnotes.com" data-text="We can share our #SXSWi notes with one another! Check it out & join me in sharing notes. sxsw.upwordnotes.com">&nbsp;</a>
+                </div>
+            </div>
+            <div class="browse">
+                <h4>Give back. Get noticed. <a target="_blank" href="http://upword-notes.tumblr.com/post/78600992601/shareyoursxswnotes">Contribute your notes.</a></h4>
+                <div class="main">
+                    <h2>Browse recent notes.</h2>
+                </div>
+            </div>
+            <div class="clr"></div>
+            <div class="spinner"><img src="{% static "images/spinner.gif" %}" alt="Loading..." /></div>
+            <div class="result-container organic-results">
+                <ol class="result-list">
+                </ol>
+            </div>
+            <div class="hidden-events">
+                <p class="hidden-summary">Hiding 20 events that match your search, but don't have notes yet.</p>
+                <p class="show-hidden"><a href='#showHidden'>Show the hidden events >>></a></p>
+            </div>
+            <div class="pagination"></div>
+            <div class="result-container recommend-results">
+                <div class="divider">&nbsp;</div>
+                <h5>More Recommendations for you:</h5>
+                <ol class="result-list">
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer" class="footer section">
+	<div class="main">
+        <h4>Give back. Get noticed.<br /><a target="_blank" href="http://upword-notes.tumblr.com/post/78600992601/shareyoursxswnotes">Contribute your notes.</a></h4>
+        <div class="twitter-timeline-container"><a class="twitter-timeline" href="https://twitter.com/UpWordSXSW/favorites" data-widget-id="441308492872155136">Favorite Tweets by @UpWordSXSW</a></div>
+        <p>This is a hackathon project by the UpWord Notes team. We hope you like it.</p>
+    </div>
+</div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48262100-2', 'upwordnotes.com');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
